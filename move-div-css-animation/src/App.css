@@ -1,0 +1,39 @@
+.cardMoveAnimation {
+  width: 100%;
+  aspect-ratio: 1;
+  position: relative;
+}
+.animationDiv {
+  height: 20rem;
+  width: 20rem;
+  background-color: violet;
+  animation: scrollToRight 4s ease-in-out infinite;
+  color: white;
+  position: absolute;
+}
+
+@keyframes scrollToRight {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: purple;
+    left: 600px;
+    top: 0;
+  }
+  50% {
+    background-color: rgb(15, 15, 77);
+    left: 600px;
+    top: 300px;
+  }
+  75% {
+    background-color: rgb(248, 149, 202);
+    left: 0;
+    top: 300px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
